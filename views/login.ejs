@@ -1,0 +1,22 @@
+
+<h1>Enter your steam id</h1>
+<h2>DISCLAIMER!!! - Your steam profile must be on public for the api to see the games you have
+   <ul>
+    <li> You can find your steam ID by logging into steam, clicking on profile, and it will be the 17 numbers at the end of the url</li>
+    <li>I do not collect any sensitive info or other information everythign is PUBLIC information and can be viewed by anyone visiting your team profile</li>
+</ul>
+
+</h2>
+<% if(messages.error) { %>
+<%= messages.error %>
+<% } %>
+<form action="/login" method ="POST">
+    <div>
+        <label for="steamID">ID (ex: 76561198405626506):</label>
+        <input type="number" id="steamID" name="steamID" 
+        > 
+    </div>
+   
+    <button type = "submit">Choose game</button>
+</form>
+<a href="/register">Register</a>
